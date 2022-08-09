@@ -30,6 +30,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "trestle"
 gem "trestle-auth"
 gem "devise"
+gem "trestle-tinymce"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

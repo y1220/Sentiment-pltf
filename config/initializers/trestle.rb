@@ -5,6 +5,32 @@ Trestle.configure do |config|
   #
   config.site_title = "Sentiment Pltf"
 
+
+  config.tinymce.default.configure do |c|
+    c.skin = "trestle"
+    c.selector = "textarea.tinymce"
+    c.branding = false
+    c.elementpath = false
+    c.menubar = false
+    c.statusbar = false
+    c.plugins = [
+      :lists,
+      :link,
+      :image,
+      :charmap,
+      :table,
+      :code,
+      :hr,
+      :paste
+    ]
+    c.toolbar = [
+      "styleselect | bold italic underline strikethrough | subscript superscript hr | alignleft aligncenter alignright alignjustify",
+      "bullist numlist | indent outdent | undo redo | link unlink | image charmap table | code"
+    ]
+    c.link_context_toolbar = true
+    c.convert_urls = false
+  end
+
   # Specify a custom image to be used in place of the site title for mobile and
   # expanded/desktop navigation. These images should be placed within your
   # asset paths, e.g. app/assets/images.
