@@ -1,6 +1,8 @@
 Trestle.resource(:tags) do
   menu do
-    item :tags, icon: "fa fa-star"
+    group :configuration do
+      item :tags, icon: "fa fa-tags"
+    end
   end
 
   # Customize the table columns shown on the index view.

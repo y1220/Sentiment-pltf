@@ -3,7 +3,7 @@ Trestle.configure do |config|
   #
   # Set the page title shown in the main header within the admin.
   #
-  config.site_title = "Sentiment Pltf"
+  config.site_title = "Sentiment tracker"
 
 
   config.tinymce.default.configure do |c|

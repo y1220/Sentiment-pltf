@@ -1,6 +1,6 @@
 Trestle.resource(:articles) do
   menu do
-    item :articles, icon: "fa fa-star"
+    item :articles, icon: "fa fa-book"
   end
 
   # Customize the table columns shown on the index view.
@@ -27,15 +27,15 @@ Trestle.resource(:articles) do
   #
   form do |article|
     text_field :title
-    editor :text
-    editor :content
+    editor :text, {label: "Problem"}
+    editor :content, {label: "Solution"}
 
     row do
       col { datetime_field :updated_at }
       col { datetime_field :created_at }
     end
 
-    tab :metadata do
+    tab :task do
       # Layout fields based on a 12-column grid
       row do
         col(sm: 6) { select :author, User.all }
@@ -57,18 +57,5 @@ Trestle.resource(:articles) do
   #
   params do |params|
     params.require(:article).permit(:title, :text, :content, :author, tag_ids: [])
-  end
-end
-
-def color_for_type(tag)
-  case tag
-    when 'Bug fix'
-      :gray
-    when 'Feature'
-      :blue
-    when 'Test'
-      :yellow
-    when 'Documentation'
-      :orange
   end
 end
