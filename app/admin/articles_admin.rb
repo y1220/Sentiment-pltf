@@ -8,15 +8,16 @@ Trestle.resource(:articles) do
   table do
     column :id
     column :title
-    column :tag_ids do |tag|
-      # byebug
+    column :type do |article|
       # tag.tags.pluck(:name)  if !tag.tags.empty?
-      if !tag.tags.empty?
-        # byebug
-        tag.tags.pluck(:name).collect do |name|
+      if !article.tags.empty?
+        article.tags.pluck(:name).collect do |name|
           status_tag(name, { "Bug fix" => :danger, "Test" => :warning,  "Feature" => :success, "Documentation" => :info }[name] || :default)
         end
       end
+    end
+    column :author do |article|
+      User.find(article.author).full_name if !article.author.nil?
     end
     column :created_at, align: :center
     actions

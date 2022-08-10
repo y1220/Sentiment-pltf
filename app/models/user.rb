@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   #include Trestle::Auth::ModelMethods
   include Trestle::Auth::ModelMethods::Rememberable
+
+  def full_name
+    first_name + " " + last_name
+  end
+
 end
