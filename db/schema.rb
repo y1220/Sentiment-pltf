@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_09_225840) do
+ActiveRecord::Schema.define(version: 2022_08_10_022630) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,23 @@ ActiveRecord::Schema.define(version: 2022_08_09_225840) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "content"
+    t.bigint "author"
+    t.bigint "tag_id"
+    t.index ["author"], name: "index_articles_on_author"
+    t.index ["tag_id"], name: "index_articles_on_tag_id"
+  end
+
+  create_table "articles_tags", id: false, force: :cascade do |t|
+    t.bigint "article_id", null: false
+    t.bigint "tag_id", null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "article_id"
+    t.index ["article_id"], name: "index_tags_on_article_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,4 +56,7 @@ ActiveRecord::Schema.define(version: 2022_08_09_225840) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "articles", "tags"
+  add_foreign_key "articles", "users", column: "author"
+  add_foreign_key "tags", "articles"
 end
