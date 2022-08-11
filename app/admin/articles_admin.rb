@@ -1,5 +1,6 @@
 Trestle.resource(:articles) do
   menu do
+    item "dashboard", icon: "fa fa-list-alt", href: "../home/index"
     item :articles, icon: "fa fa-book"
   end
 
@@ -26,21 +27,29 @@ Trestle.resource(:articles) do
   # Customize the form fields shown on the new/edit views.
   #
   form do |article|
-    text_field :title
-    editor :text, {label: "Problem"}
-    editor :content, {label: "Solution"}
 
-    row do
-      col { datetime_field :updated_at }
-      col { datetime_field :created_at }
-    end
+    tab :troubleshoot do
+      text_field :title
+      editor :text, {label: "Problem"}
+      editor :content, {label: "Solution"}
 
-    tab :task do
+      row do
+        col { datetime_field :updated_at }
+        col { datetime_field :created_at }
+      end
+
       # Layout fields based on a 12-column grid
       row do
         col(sm: 6) { select :author, User.all }
         # col(sm: 6) { select :tag_ids, options_from_collection_for_select(Tag.all, 'id', 'name'), { label: "Type" } , :multiple => true}
         col(sm: 6) { collection_select :tag_ids, Tag.all, :id, :name, {label: "Type"}, {:multiple => true} }
+      end
+    end
+
+    tab :question do
+      # Layout fields based on a 12-column grid
+      row do
+        editor :content, {label: "Solution"}
       end
     end
   end

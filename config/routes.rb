@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'question/index'
+  get 'question/create'
   devise_for :users
   root 'home#index'
 
