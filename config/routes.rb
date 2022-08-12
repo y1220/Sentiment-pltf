@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'recommenders/index'
   get 'question/index'
   get 'question/create'
   devise_for :users
