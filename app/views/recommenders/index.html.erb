@@ -11,7 +11,7 @@
 
     <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Team member</h5><i class="fa fa-commenting"></i>
+              <h5 class="card-title">Team member for Task A | <a href="#" style="color: #DC143C;">Task B</a>  | <a href="#" style="color: #DC143C;">Task C</a> </h5>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
               <p>Visit <a href="#" style="color: #DC143C;">this page</a> for details of the task.</p>
@@ -22,7 +22,7 @@
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Position</th>
-                    <th scope="col">Age</th>
+                    <th scope="col">Availability</th>
                     <th scope="col">Contact</th>
                   </tr>
                 </thead>
@@ -31,36 +31,36 @@
                     <th scope="row">1</th>
                     <td>Brandon Jacob</td>
                     <td>Designer</td>
-                    <td>28</td>
+                    <td><button type="button" class="btn btn-outline-danger">busy</button></td>
                     <td><i class="fas fa-commenting"></i></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>Bridie Kessler</td>
                     <td>Developer</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
+                    <td><button type="button" class="btn btn-outline-success">available</button></td>
+                    <td><i class="fa fa-commenting"></i> <i class="fa fa-smile" aria-hidden="true"></i></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>Ashleigh Langosh</td>
                     <td>Finance</td>
-                    <td>45</td>
-                    <td>2011-08-12</td>
+                    <td><button type="button" class="btn btn-outline-danger">busy</button></td>
+                    <td><i class="fa fa-commenting"></i></td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td>Angus Grady</td>
                     <td>HR</td>
-                    <td>34</td>
-                    <td>2012-06-11</td>
+                    <td><button type="button" class="btn btn-outline-info">normal</button></td>
+                    <td><i class="fa fa-commenting"></i></td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td>Raheem Lehner</td>
                     <td>Dynamic Division Officer</td>
-                    <td>47</td>
-                    <td>2011-04-19</td>
+                    <td><button type="button" class="btn btn-outline-success">available</button></td>
+                    <td><i class="fa fa-commenting"></i> <i class="fa fa-smile" aria-hidden="true"></i></td>
                   </tr>
                 </tbody>
               </table>
@@ -71,66 +71,125 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Table Variants</h5>
-              <p>Use contextual classes <code>.table-primary .table-secondary .table-success .table-danger .table-warning .table-info .table-light .table-dark</code> to color tables, table rows or individual cells.</p>
+              <h5 class="card-title">Sort task</h5>
+              <p>Select <code>characteristics of task</code> to gain ideas of tasks you are looking for.</p>
+              <div class="row mb-5">
+                  <label class="col-sm-2 col-form-label">Ranges</label>
+                  <div class="col-sm-10">
+                    <div>
+                      <label for="customRange1" class="form-label">Front-end</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange2">
+                    </div>
+                    <div>
+                      <label for="disabledRange" class="form-label">Back-end</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange2">
+                    </div>
+                    <div>
+                      <label for="customRange2" class="form-label">Infrastructure</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange2">
+                    </div>
+                    <div>
+                      <label for="customRange2" class="form-label">Sql</label>
+                      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange2">
+                    </div>
+                  </div>
+                </div>
               <!-- Table Variants -->
               <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Class</th>
-                    <th scope="col">Heading</th>
-                    <th scope="col">Heading</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Complexity</th>
+                    <th scope="col">Priority</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Front-end</th>
+                    <th scope="col">Back-end</th>
+                    <th scope="col">Infrastructure</th>
+                    <th scope="col">Sql</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Default</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
+                    <th scope="row"><a href="#">Integration for AAA</a></th>
+                    <td>60.2</td>
+                    <td>33.2</td>
+                    <td>43.6</td>
+                    <td>16.8</td>
+                    <td>25.5</td>
+                    <td>53.8</td>
+                    <td>81.2</td>
                   </tr>
 
-                  <tr class="table-primary">
-                    <th scope="row">Primary</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
+                  <tr class="table-secondary">
+                    <th scope="row"><a href="#">BBB API</a></th>
+                    <td>32.6</td>
+                    <td>73.2</td>
+                    <td>92.4</td>
+                    <td>13.6</td>
+                    <td>18.2</td>
+                    <td>28.0</td>
+                    <td>22.6</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><a href="#">Bugfix of Product C</a></th>
+                    <td>82.3</td>
+                    <td>72.1</td>
+                    <td>11.3</td>
+                    <td>9.2</td>
+                    <td>18.5</td>
+                    <td>51.7</td>
+                    <td>28.3</td>
                   </tr>
                   <tr class="table-secondary">
-                    <th scope="row">Secondary</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
+                    <th scope="row"><a href="#">Ticket D</a></th>
+                    <td>82.6</td>
+                    <td>11.5</td>
+                    <td>27.9</td>
+                    <td>45.7</td>
+                    <td>25.9</td>
+                    <td>33.3</td>
+                    <td>51.2</td>
                   </tr>
-                  <tr class="table-success">
-                    <th scope="row">Success</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
+                  <tr>
+                    <th scope="row"><a href="#">Analysis for Company B</a></th>
+                    <td>82.3</td>
+                    <td>11.3</td>
+                    <td>29.3</td>
+                    <td>48.7</td>
+                    <td>24.8</td>
+                    <td>16.2</td>
+                    <td>18.7</td>
                   </tr>
-                  <tr class="table-danger">
-                    <th scope="row">Danger</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                  </tr>
-                  <tr class="table-warning">
-                    <th scope="row">Warning</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                  </tr>
-                  <tr class="table-info">
-                    <th scope="row">Info</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                  </tr>
-                  <tr class="table-light">
-                    <th scope="row">Light</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                  </tr>
-                  <tr class="table-dark">
-                    <th scope="row">Dark</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
+                  <tr class="table-secondary">
+                    <th scope="row"><a href="#">Support for Task F</a></th>
+                    <td>16.3</td>
+                    <td>18.2</td>
+                    <td>26.3</td>
+                    <td>52.4</td>
+                    <td>42.7</td>
+                    <td>16.3</td>
+                    <td>36.9</td>
                   </tr>
                 </tbody>
               </table>
+              <!-- Pagination with icons -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav><!-- End Pagination with icons -->
               <!-- End Table Variants -->
 
             </div>
@@ -155,17 +214,17 @@
                     type: 'radar',
                     data: {
                     labels: [
-                        'Eating',
-                        'Drinking',
-                        'Sleeping',
-                        'Designing',
-                        'Coding',
-                        'Cycling',
-                        'Running'
+                        'Complexity',
+                        'Priority',
+                        'Duration',
+                        'Front-end',
+                        'Back-end',
+                        'Infrastructure',
+                        'Sql'
                     ],
                     datasets: [{
                         label: 'Your task',
-                        data: [65, 59, 90, 81, 56, 55, 40],
+                        data: [65, 59, 90, 81, 56, 55, 78],
                         fill: true,
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         borderColor: 'rgb(255, 99, 132)',
@@ -174,8 +233,8 @@
                         pointHoverBackgroundColor: '#fff',
                         pointHoverBorderColor: 'rgb(255, 99, 132)'
                     }, {
-                        label: 'Task B',
-                        data: [28, 48, 40, 19, 96, 27, 100],
+                        label: 'Integration for AAA',
+                        data: [60.2, 33.2, 43.6, 16.8, 25.5, 53.8, 81.2],
                         fill: true,
                         backgroundColor: 'rgba(54, 162, 235, 0.2)',
                         borderColor: 'rgb(54, 162, 235)',
@@ -204,7 +263,7 @@
         <div class="col-lg-6">
         <div class="card">
             <div class="card-body">
-            <h5 class="card-title">Polar Area Chart</h5>
+            <h5 class="card-title">Help needed</h5>
 
             <!-- Polar Area Chart -->
             <canvas id="polarAreaChart" style="max-height: 400px;"></canvas>
@@ -214,11 +273,11 @@
                     type: 'polarArea',
                     data: {
                     labels: [
-                        'Red',
-                        'Green',
-                        'Yellow',
-                        'Grey',
-                        'Blue'
+                        'CollegueA',
+                        'CollegueB',
+                        'CollegueC',
+                        'CollegueD',
+                        'CollegueE',
                     ],
                     datasets: [{
                         label: 'My First Dataset',
