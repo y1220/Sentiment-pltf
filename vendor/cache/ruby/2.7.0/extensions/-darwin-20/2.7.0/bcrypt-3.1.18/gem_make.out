@@ -1,0 +1,23 @@
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+/Users/yuiwatanabe/.rbenv/versions/2.7.0/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.0/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20220813-13532-1bvbnou sitelibdir\=./.gem.20220813-13532-1bvbnou clean
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20220813-13532-1bvbnou sitelibdir\=./.gem.20220813-13532-1bvbnou
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+clang  -D__SKIP_GNU -I/Users/yuiwatanabe/.rbenv/versions/2.7.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+wrapper.c:182:60: warning: declaration of 'struct crypt_data' will not be visible outside of this function [-Wvisibility]
+char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+                                                           ^
+1 warning generated.
+linking shared-object bcrypt_ext.bundle
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20220813-13532-1bvbnou sitelibdir\=./.gem.20220813-13532-1bvbnou install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20220813-13532-1bvbnou
