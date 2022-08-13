@@ -28,9 +28,5 @@
 	"homepage": "https://www.tiny.cloud/",
 	"bugs": {
 		"url": "https://github.com/tinymce/tinymce/issues"
-	},
-	"engines": {
-		"node": "18.0.0",
-		"npm": "8.6.0"
 	}
 }
