@@ -6,6 +6,7 @@ Trestle.resource(:articles) do
 
   # Customize the table columns shown on the index view.
   #
+
   table do
     column :id
     column :title
