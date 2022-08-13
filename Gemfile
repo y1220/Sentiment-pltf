@@ -31,7 +31,7 @@ gem "trestle"
 gem "trestle-auth"
 gem "devise"
 gem "trestle-tinymce"
-gem "font-awesome-sass", "~> 6.1.2"
+gem "font-awesome-sass", "~> 5.15.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
