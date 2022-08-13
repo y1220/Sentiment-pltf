@@ -30,6 +30,7 @@
 		"url": "https://github.com/tinymce/tinymce/issues"
 	},
 	"engines": {
-		"node": "14.x"
+		"node": "18.0.0",
+		"npm": "8.6.0"
 	}
 }
