@@ -1,0 +1,15 @@
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bootsnap-1.13.0/ext/bootsnap
+/Users/yuiwatanabe/.rbenv/versions/2.7.6/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220814-5648-sny9u sitelibdir\=./.gem.20220814-5648-sny9u clean
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220814-5648-sny9u sitelibdir\=./.gem.20220814-5648-sny9u
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/cache/ruby/2.7.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220814-5648-sny9u sitelibdir\=./.gem.20220814-5648-sny9u install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220814-5648-sny9u/bootsnap
