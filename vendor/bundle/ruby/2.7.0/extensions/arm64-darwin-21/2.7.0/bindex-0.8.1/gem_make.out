@@ -1,0 +1,15 @@
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/yuiwatanabe/.rbenv/versions/2.7.6/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.6/lib/ruby/2.7.0 -r ./siteconf20220814-27971-19f8e8p.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20220814-27971-1h2cz4/skiptrace/internal

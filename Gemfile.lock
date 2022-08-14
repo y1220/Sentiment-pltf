@@ -63,7 +63,6 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.18)
-    bcrypt (3.1.18-java)
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
@@ -89,9 +88,6 @@ GEM
       warden (~> 1.2.3)
     erubi (1.11.0)
     ffi (1.15.5)
-    ffi (1.15.5-java)
-    ffi (1.15.5-x64-mingw32)
-    ffi (1.15.5-x86-mingw32)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
     globalid (1.0.0)
@@ -128,29 +124,16 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.2)
     msgpack (1.5.4)
-    msgpack (1.5.4-java)
     nio4r (2.5.8)
-    nio4r (2.5.8-java)
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.8-java)
-      racc (~> 1.4)
-    nokogiri (1.13.8-x64-mingw32)
-      racc (~> 1.4)
-    nokogiri (1.13.8-x86-mingw32)
-      racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.3)
-    pg (1.4.3-x64-mingw32)
-    pg (1.4.3-x86-mingw32)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
-    puma (5.6.4-java)
-      nio4r (~> 2.0)
     racc (1.6.0)
-    racc (1.6.0-java)
     rack (2.2.4)
     rack-mini-profiler (2.3.4)
       rack (>= 1.2.0)
@@ -178,18 +161,13 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (6.1.6.1)
       actionpack (= 6.1.6.1)
       activesupport (= 6.1.6.1)
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
-    rake (13.0.6)
+    rake (13.0.1)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -200,8 +178,6 @@ GEM
     rexml (3.2.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     selenium-webdriver (4.4.0)
       childprocess (>= 0.5, < 5.0)
@@ -235,8 +211,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.2)
-      tzinfo (>= 1.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -255,19 +229,13 @@ GEM
     websocket (1.2.9)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
-    websocket-driver (0.7.5-java)
-      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.0)
 
 PLATFORMS
-  java
   ruby
-  x64-mingw32
-  x86-mingw32
-  x86-mswin32
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
@@ -281,8 +249,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (= 6.1.6.1)
-  rails_12factor
-  rake (= 13.0.6)
+  rake (= 13.0.1)
   selenium-webdriver (>= 4.0.0.rc1)
   spring
   trestle
@@ -295,7 +262,7 @@ DEPENDENCIES
   webpacker (~> 4.3.0)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.6p219
 
 BUNDLED WITH
-   2.1.2
+   2.1.4

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.0"
+ruby "2.7.6"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem "rails", "6.1.6.1"
@@ -32,8 +32,8 @@ gem "trestle-auth"
 gem "devise"
 gem "trestle-tinymce"
 gem "font-awesome-sass", "~> 5.15.1"
-gem "rake", "13.0.6"
-gem 'rails_12factor'
+gem "rake", "13.0.1"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
