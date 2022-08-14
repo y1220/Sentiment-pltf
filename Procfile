@@ -1,2 +1,1 @@
-web: bundle exec rails s
-release: bin/rake db:migrate
+web: gem install rake -v 13.0.1
