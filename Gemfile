@@ -33,7 +33,6 @@ gem "devise"
 gem "trestle-tinymce"
 gem "font-awesome-sass", "~> 5.15.1"
 gem "rake", "13.0.1"
-gem "net-http"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
