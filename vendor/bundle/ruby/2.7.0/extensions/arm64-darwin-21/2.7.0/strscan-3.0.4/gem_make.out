@@ -1,0 +1,16 @@
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.4/ext/strscan
+/Users/yuiwatanabe/.rbenv/versions/2.7.6/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220814-59260-ucc81u sitelibdir\=./.gem.20220814-59260-ucc81u clean
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220814-59260-ucc81u sitelibdir\=./.gem.20220814-59260-ucc81u
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220814-59260-ucc81u sitelibdir\=./.gem.20220814-59260-ucc81u install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220814-59260-ucc81u

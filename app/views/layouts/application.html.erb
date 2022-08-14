@@ -8,6 +8,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>
+        FontAwesomeConfig = {
+          mutateApproach: 'sync'
+        }
+    </script>
     <%#= favicon_pack_tag 'sheep.png' %>
 
     <!-- =======================================================
@@ -43,10 +48,6 @@
               <%= link_to("Admin","/admin", class: "nav-link active", style: "text-decoration: none; color: black;")%>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>

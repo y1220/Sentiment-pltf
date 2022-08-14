@@ -13,7 +13,8 @@ window.$ = window.jQuery = jquery;
 // window.bootstrap = bootstrap;
 import "bootstrap";
 import "../stylesheets/application";
-import "@fortawesome/fontawesome-free/js/all";
+import "@fortawesome/fontawesome-svg-core";
+FontAwesome.config.mutateApproach = "sync";
 
 Rails.start();
 Turbolinks.start();

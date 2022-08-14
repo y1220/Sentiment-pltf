@@ -1,17 +1,17 @@
 current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/racc-1.6.0/ext/racc/cparse
-/Users/yuiwatanabe/.rbenv/versions/2.7.6/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.6/lib/ruby/2.7.0 -r ./siteconf20220814-27971-17x16ir.rb extconf.rb
+/Users/yuiwatanabe/.rbenv/versions/2.7.6/bin/ruby -I /Users/yuiwatanabe/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 extconf.rb
 checking for rb_block_call()... yes
 checking for rb_ary_subseq()... yes
 creating Makefile
 
 current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/racc-1.6.0/ext/racc/cparse
-make "DESTDIR=" clean
+make DESTDIR\= sitearchdir\=./.gem.20220814-68257-18dtcn sitelibdir\=./.gem.20220814-68257-18dtcn clean
 
 current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/racc-1.6.0/ext/racc/cparse
-make "DESTDIR="
+make DESTDIR\= sitearchdir\=./.gem.20220814-68257-18dtcn sitelibdir\=./.gem.20220814-68257-18dtcn
 compiling cparse.c
 linking shared-object racc/cparse.bundle
 
 current directory: /Users/yuiwatanabe/Desktop/rails/Sentiment/Sentiment-pltf/vendor/bundle/ruby/2.7.0/gems/racc-1.6.0/ext/racc/cparse
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220814-27971-ozwen7/racc
+make DESTDIR\= sitearchdir\=./.gem.20220814-68257-18dtcn sitelibdir\=./.gem.20220814-68257-18dtcn install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220814-68257-18dtcn/racc
